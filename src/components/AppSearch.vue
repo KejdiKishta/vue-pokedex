@@ -9,7 +9,14 @@ export default {
         }
     },
     methods: {
-
+        search() {
+            axios
+            .get(`https://pokeapi.co/api/v2/pokemon/${this.store.querySearch}/`)
+            .then((resp)=>{
+                this.store.searchResult = resp.data
+                console.log(this.store.searchResult);
+            })
+        }
     }
 }
 
