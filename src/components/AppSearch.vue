@@ -10,11 +10,20 @@ export default {
     },
     methods: {
         search() {
+            // pokemon info
             axios
             .get(`https://pokeapi.co/api/v2/pokemon/${this.store.querySearch}/`)
             .then((resp)=>{
-                this.store.searchResult = resp.data
-                console.log(this.store.searchResult);
+                this.store.info = resp.data
+                // console.log(this.store.info);
+            })
+
+            // pokemon habitat
+            axios
+            .get(`https://pokeapi.co/api/v2/pokemon-species/${this.store.querySearch}/`)
+            .then((resp)=>{
+                this.store.habitat = resp.data.habitat.url
+                // console.log(this.store.habitat);
             })
         }
     }

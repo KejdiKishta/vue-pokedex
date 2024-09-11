@@ -1,9 +1,11 @@
 <script>
 import AppLeftCol from './AppLeftCol.vue';
+import AppRightCol from './AppRightCol.vue';
 
 export default {
     components: {
         AppLeftCol,
+        AppRightCol,
     },
     data() {
         return {
@@ -15,8 +17,13 @@ export default {
 
 <template>
     <main class="d-flex justify-content-center align-items-center">
-        <div class="w-75 ratio ratio-21x9 bg-danger">
-            <AppLeftCol />
+        <div class="w-75 bg-danger d-flex">
+            <div class="w-50">
+                <AppLeftCol />
+            </div>
+            <div class="w-50">
+                <AppRightCol />
+            </div>
         </div>
     </main>
 </template>
@@ -25,7 +32,7 @@ export default {
 @use "../scss/partials/variables" as *;
 
 main {
-    height: 100vh - $header-height;
+    height: calc( 100vh - $header-height);
     overflow: hidden;
 }
 </style>

@@ -1,6 +1,7 @@
 import {reactive} from "vue"
 
 export const store = reactive({
-    querySearch: "",
-    searchResult: null,
+    querySearch: null,
+    info: null,
+    habitat: null,
 });

@@ -1,9 +1,13 @@
 <script>
+import AppImages from "./AppImages.vue";
 import AppSearch from "./AppSearch.vue";
+import AppStats from "./AppStats.vue";
 
 export default {
     components: {
-        AppSearch
+        AppSearch,
+        AppImages,
+        AppStats
     },
     data() {
         return {
@@ -16,6 +20,8 @@ export default {
 <template>
     <div class="p-3">
         <AppSearch />
+        <AppImages />
+        <AppStats />
     </div>
 </template>
 
