@@ -1,9 +1,9 @@
 <script>
-import AppMain from "./pages/AppMain.vue";
+import HomePage from "./pages/HomePage.vue";
 
 export default {
   components: {
-    AppMain,
+    HomePage,
   },
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <AppMain />
+  <HomePage />
 </template>
 
 <style scoped>
