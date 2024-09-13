@@ -15,7 +15,7 @@ export default {
             .get(`https://pokeapi.co/api/v2/pokemon/${this.store.querySearch}/`)
             .then((resp)=>{
                 this.store.info = resp.data
-                console.log(this.store.info.sprites);
+                console.log(this.store.info);
             })
 
             // pokemon habitat
