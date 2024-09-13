@@ -53,8 +53,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.ms_bg {
-    background-image: url(../assets/516813.jpg);
-    background-size: cover;
-}
+// .ms_bg {
+//     background-image: url(../assets/516813.jpg);
+//     background-size: cover;
+// }
 </style>
