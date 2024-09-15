@@ -16,8 +16,8 @@ export default {
 </script>
 
 <template>
-    <main class="d-flex justify-content-center align-items-center">
-        <div class="w-75 bg-danger d-flex">
+    <main class="d-flex justify-content-start align-items-center">
+        <div class="ms-5 rounded d-flex">
             <div class="w-50">
                 <AppLeftCol />
             </div>
@@ -34,5 +34,14 @@ export default {
 main {
     height: calc( 100vh - $header-height);
     overflow: hidden;
+    background-image: url('../assets/3907402.png');
+    background-size: cover;
+    background-position: bottom;
+    
+    &>div {
+        background-color: #C62828;
+        border: 10px solid #8E0000;
+        width: 60%;
+    }
 }
 </style>
