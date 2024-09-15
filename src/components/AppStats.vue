@@ -24,7 +24,7 @@ export default {
 <template>
     <div class="p-2 pt-0">
         <div class="bg-success rounded p-3" style="height: 200px;">
-            <h5 class="text-center text-uppercase fw-bold">{{ this.store.info.name }}</h5>
+            <h5 v-if="this.store.info" class="text-center text-uppercase fw-bold">{{ this.store.info.name }}</h5>
             <div v-for="item in getStats" class="d-flex">
                 <div class="w-50">{{ item.stat.name }}</div>
                 <!-- <div class="w-50">{{ item.base_stat }}</div> -->
