@@ -3,16 +3,22 @@
 </script>
 
 <template>
-<header class="p-3">
-    <h1 class="text-center">BooleDex</h1>
-</header>
+    <header>
+        <img src="../assets/pokedex-3d-logo.png" alt="">
+    </header>
 </template>
 
 <style scoped lang="scss">
 @use "../scss/partials/variables" as *;
 
 header {
-    border-bottom: 2px solid black;
+    background-image: url('../assets/516813.jpg');
+    background-size: contain;
     height: $header-height;
+    text-align: center;
+
+    img {
+        max-height: 100%;
+    }
 }
 </style>
