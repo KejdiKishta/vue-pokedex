@@ -9,7 +9,7 @@ export default {
     },
     methods: {
         capture() {
-            this.store.captured.indexOf(this.store.info.name) === -1? this.store.captured.push(this.store.info.name) : console.log('You already captured this pokemon');
+            this.store.captured.indexOf(this.store.info.name) === -1? this.store.captured.push(this.store.info.name) : console.log("You've already captured this pokemon");
         }
     }
 }
@@ -17,10 +17,13 @@ export default {
 
 <template>
     <div>
-        <button @click="capture">Catch it!</button>
+        <button class="rounded-4 px-3" @click="capture">Catch it!</button>
     </div>
 </template>
 
 <style scoped lang="scss">
-
+button {
+    border: 1px solid black;
+    height: 100%;
+}
 </style>
