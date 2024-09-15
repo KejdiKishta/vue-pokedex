@@ -1,5 +1,5 @@
 <script>
-import AppCaptured from "./Appcaptured.vue"
+import AppCaptured from "./AppCaptured.vue"
 
 export default {
     components: {
